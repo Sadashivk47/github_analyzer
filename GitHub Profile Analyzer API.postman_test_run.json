@@ -1,0 +1,154 @@
+{
+	"id": "2b9efd74-cffc-491f-a402-0c44b4124471",
+	"name": "GitHub Profile Analyzer API",
+	"timestamp": "2026-07-03T02:54:18.413Z",
+	"collection_id": "55921877-b160a1b4-458b-4405-8c67-9c4a45f4562c",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-07-03T02:54:15.086Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e416f1dd-2540-4eff-8544-f4f989325682",
+			"name": "Health Check",
+			"url": "http://localhost:5000/health",
+			"time": 365,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				365
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fee94dc9-d87e-4662-bf4d-9d026179b9ba",
+			"name": "Analyze Profile (Fetch + Store)",
+			"url": "http://localhost:5000/api/profiles/sadashivk47",
+			"time": 1716,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1716
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a869100c-7991-4ab3-9cc2-ef3228a7ebf2",
+			"name": "Get All Analyzed Profiles",
+			"url": "http://localhost:5000/api/profiles?limit=20&page=1&sort=last_analyzed_at&order=desc",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				21
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d0eb33b8-8116-4a99-b357-b8ea023cbc41",
+			"name": "Get Single Profile",
+			"url": "http://localhost:5000/api/profiles/sadashivk47",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				128
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dd7e01fe-7522-45f7-9689-1d5ab5335977",
+			"name": "Get Profile Insight History",
+			"url": "http://localhost:5000/api/profiles/sadashivk47/history",
+			"time": 39,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				39
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5650913c-3a6d-454c-825a-284e5252eae4",
+			"name": "Delete Profile",
+			"url": "http://localhost:5000/api/profiles/sadashivk47",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2281,
+	"collection": {
+		"requests": [
+			{
+				"id": "e416f1dd-2540-4eff-8544-f4f989325682",
+				"method": "GET"
+			},
+			{
+				"id": "fee94dc9-d87e-4662-bf4d-9d026179b9ba",
+				"method": "POST"
+			},
+			{
+				"id": "a869100c-7991-4ab3-9cc2-ef3228a7ebf2",
+				"method": "GET"
+			},
+			{
+				"id": "d0eb33b8-8116-4a99-b357-b8ea023cbc41",
+				"method": "GET"
+			},
+			{
+				"id": "dd7e01fe-7522-45f7-9689-1d5ab5335977",
+				"method": "GET"
+			},
+			{
+				"id": "5650913c-3a6d-454c-825a-284e5252eae4",
+				"method": "DELETE"
+			}
+		]
+	}
+}
