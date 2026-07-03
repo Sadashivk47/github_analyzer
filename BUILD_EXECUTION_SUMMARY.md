@@ -7,8 +7,8 @@
 
 ### Core Implementation Files 
 
-| Step | Component | File | Status |
-|------|-----------|------|--------|
+| Step | Component | File |
+|------|-----------|------|
 | 5 | DB Connection Pool | `src/config/db.js` | 
 | 6 | Async Handler | `src/utils/asyncHandler.js` | 
 | 7 | GitHub Service | `src/services/github.service.js` | 
