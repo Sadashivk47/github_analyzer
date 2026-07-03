@@ -1,0 +1,4 @@
+node_modules/
+.env
+BUILD_EXECUTION_SUMMARY.md
+github-profile-analyzer-build-guide.md
