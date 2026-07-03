@@ -7,7 +7,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "http://localhost:5000",
+      "value": "https://github-analyzer-eiwv.onrender.com/",
       "type": "string"
     },
     {
